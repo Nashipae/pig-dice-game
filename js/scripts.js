@@ -1,7 +1,7 @@
 
 
-var p1=0;
-var h1= 0
+// var p1=0;
+// var h1= 0
 // for(i=0; i<listItems.length; i++){
 //   listItems[i].addEventListener("click", activateItem);
 // }
@@ -18,5 +18,12 @@ var h1= 0
 //   diceRoll.innerHTML = Math.floor((Math.random() * 6) + 1);
 // }
 function rotateDie() {
-  var diceRoll = Math.floor((Math.random() * 6) + 1);
+  dieRoll = Math.floor((Math.random() * 6) + 1);
+  return dieRoll;
+};
+var player1Roll= function(rotateDie){
+  alert("Your score is "+dieRoll);
+}
+var player2Roll = function (rotateDie) {
+  alert("Your score is " + dieRoll);
 }
