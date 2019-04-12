@@ -20,6 +20,7 @@ player.prototype.rollDice = function (){
   } 
   else {
     this.score.push(this.roll);
+    return this.score;
   }
 }
 player.prototype.holdDice = function(){
@@ -27,13 +28,17 @@ player.prototype.holdDice = function(){
     return (total + num);})
   return this.ptotal;
 }
-// function print1(){
-//   player1.rollDice();
-//   player1.holdDice();
-//   console.log(player1.ptotal);
-// }
+function print1(){
+  player1.rollDice();
+  player1.holdDice();
+  console.log(player1.ptotal);
+}
 
 // User Logic
 $(document).ready(function () {
-  
+  // $("#p1buttonroll").click(){}
+  $("#p1buttonroll").click(function () {
+    $("#scoreDisplay").text(player1.rollDice());
+    
+  });  
 }); 
