@@ -56,8 +56,8 @@ $(document).ready(function () {
   });  
 
   $("#p2buttonroll").click(function () {
-    $("#scoreDisplay").text(player2.rollDice());
-    $("#totalDisplay").text(player2.ptotal);
+    $("#scoreDisplay2").text(player2.rollDice());
+    $("#totalDisplay2").text(player2.ptotal);
     if (player2.roll === 1) {
       $("#p2buttonroll").hide();
       $("#dieHold2").hide();
@@ -66,7 +66,7 @@ $(document).ready(function () {
     }
   });
   $("#dieHold2").click(function () {
-    $("#totalDisplay").text(player2.holdDice());
+    $("#totalDisplay2").text(player2.holdDice());
     $("#p2buttonroll").hide();
     $("#dieHold2").hide();
     $("#p1buttonroll").show();
