@@ -1,29 +1,26 @@
 
-
-// var p1=0;
-// var h1= 0
-// for(i=0; i<listItems.length; i++){
-//   listItems[i].addEventListener("click", activateItem);
-// }
-// function activateItem(){
-//   // alert("Click detected.");
-//   p1+=1
-//   console.log(p1);
-//   h1+=p1
-  
-// }
-
-// function rotateDie() {
-//   var diceRoll = document.getElementById("die-roll")
-//   diceRoll.innerHTML = Math.floor((Math.random() * 6) + 1);
-// }
-function rotateDie() {
-  dieRoll = Math.floor((Math.random() * 6) + 1);
-  return dieRoll;
-};
-var player1Roll= function(rotateDie){
-  alert("Your score is "+dieRoll);
+// To get random number
+var rotateDie = function(){
+  Math.floor((Math.random() * 6) + 1);
 }
-var player2Roll = function (rotateDie) {
-  alert("Your score is " + dieRoll);
+
+// To create a score array
+var scorePlayer1 = [];
+var scorePlayer2 = [];
+
+// To push items to array
+var player1= function(){
+  scorePlayer1.push(rotateDie());
+}
+var scorePlayer2 = function () {
+  scorePlayer2.push(rotateDie());
+}
+
+// To get cumulative score
+var cumScorePlayer1 = 0;
+var totalScorePlayer1 = function (scorePlayer1, rotateDie){
+  return scorePlayer1 + rotateDie
+}
+function player1Total(item) {
+  document.getElementById("P1Score").innerHTML = numbers.reduce(totalScorePlayer1);
 }
