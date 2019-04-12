@@ -39,6 +39,9 @@ $(document).ready(function () {
   // $("#p1buttonroll").click(){}
   $("#p1buttonroll").click(function () {
     $("#scoreDisplay").text(player1.rollDice());
-    
+    $("#totalDisplay").text(player1.ptotal);
   });  
+  $("#dieHold").click(function () {
+    $("#totalDisplay").text(player1.holdDice());
+ });  
 }); 
