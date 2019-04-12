@@ -16,7 +16,7 @@ player.prototype.rollDice = function (){
   this.roll = rotateDie();
   if (this.roll ===1){
     this.score=[];
-    return this.ptotal;
+    return "Oh no! Your die score is 1";
   } 
   else {
     this.score.push(this.roll);
@@ -40,8 +40,38 @@ $(document).ready(function () {
   $("#p1buttonroll").click(function () {
     $("#scoreDisplay").text(player1.rollDice());
     $("#totalDisplay").text(player1.ptotal);
+    if (player1.roll === 1){
+      $("#p1buttonroll").hide();
+      $("#dieHold").hide();
+      $("#p2buttonroll").show();
+      $("#dieHold2").show();
+    }
   });  
   $("#dieHold").click(function () {
     $("#totalDisplay").text(player1.holdDice());
- });  
+    $("#p1buttonroll").hide();
+    $("#dieHold").hide();
+    $("#p2buttonroll").show();
+    $("#dieHold2").show();
+  });  
+
+  $("#p2buttonroll").click(function () {
+    $("#scoreDisplay").text(player2.rollDice());
+    $("#totalDisplay").text(player2.ptotal);
+    if (player2.roll === 1) {
+      $("#p2buttonroll").hide();
+      $("#dieHold2").hide();
+      $("#p1buttonroll").show();
+      $("#dieHold").show();
+    }
+  });
+  $("#dieHold2").click(function () {
+    $("#totalDisplay").text(player2.holdDice());
+    $("#p2buttonroll").hide();
+    $("#dieHold2").hide();
+    $("#p1buttonroll").show();
+    $("#dieHold").show();
+    
+  });
+ 
 }); 
