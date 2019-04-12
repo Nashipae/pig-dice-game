@@ -1,4 +1,5 @@
-var listItems = document.getElementById("our-list").getElementsByTagName("li");
+
+
 var p1=0;
 var h1= 0
 // for(i=0; i<listItems.length; i++){
@@ -11,3 +12,11 @@ var h1= 0
 //   h1+=p1
   
 // }
+
+// function rotateDie() {
+//   var diceRoll = document.getElementById("die-roll")
+//   diceRoll.innerHTML = Math.floor((Math.random() * 6) + 1);
+// }
+function rotateDie() {
+  var diceRoll = Math.floor((Math.random() * 6) + 1);
+}
