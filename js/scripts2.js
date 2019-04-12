@@ -39,7 +39,7 @@ $(document).ready(function () {
   // $("#p1buttonroll").click(){}
   $("#p1buttonroll").click(function () {
     $("#scoreDisplay").text(player1.rollDice());
-    $("#totalDisplay").text(player1.ptotal);
+    $("#totalDisplay").text("Your total score is "+ player1.ptotal);
     if (player1.roll === 1){
       $("#p1buttonroll").hide();
       $("#dieHold").hide();
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
   $("#p2buttonroll").click(function () {
     $("#scoreDisplay2").text(player2.rollDice());
-    $("#totalDisplay2").text(player2.ptotal);
+    $("#totalDisplay2").text("Your total score is "+ player2.ptotal);
     if (player2.roll === 1) {
       $("#p2buttonroll").hide();
       $("#dieHold2").hide();
