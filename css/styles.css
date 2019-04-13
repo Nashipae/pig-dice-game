@@ -5,12 +5,44 @@
   
 } */
 
+.col-md-6{
+  font-family: 'EB Garamond', serif;
+  background-color: black;
+  color: white;
+  font-size: large;
+  border: cornsilk;
+  height: 300px;
+}
 #myjumbo{
   background-image: url("../images/dice3.jpg");
 }
 #player2{
-  background-color: coral;
+  background-color:  #d9b3ff;
+  height: 200px;
+  margin: 5px;
+  width:  300px;
 }
 #player1{
-  background-color: greenyellow;
+  background-color: #aaff80;
+  height: 200px;
+  margin: 5px;
+  width:  300px;
+}
+#scoresTally{
+  background-color: #ff99e6;
+  height: 200px;
+  margin: 5px;
+  width:  300px;
+}
+#playBoard{
+  height: 200px;
+  background-image: url("../images/bckgrd1.jpg");
+  align: center;
+}
+#headline{
+ text-align: center;
+ align-content: center;
+}
+#timeToPlay{
+
 }
