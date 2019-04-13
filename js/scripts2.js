@@ -28,6 +28,12 @@ player.prototype.holdDice = function(){
     return (total + num);})
   return this.ptotal;
 }
+player.prototype.ptotal = function(){
+  if(ptotal => 100){alert("Congratulations! You won the game.")
+  }
+}
+
+
 function print1(){
   player1.rollDice();
   player1.holdDice();
@@ -55,7 +61,7 @@ $(document).ready(function () {
     $("#dieHold").hide();
     $("#p2buttonroll").show();
     $("#dieHold2").show();
-  });  
+    $("#score
 
   $("#p2buttonroll").click(function () {
     $("#scoreDisplay2").text(player2.rollDice());
