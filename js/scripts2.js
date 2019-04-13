@@ -7,6 +7,7 @@ function player() {
   this.hold = 0;
   this.score = [];
   this.ptotal = 0;
+  this.playerName
 }
 
 var player1 = new player();
@@ -28,8 +29,12 @@ player.prototype.holdDice = function(){
     return (total + num);})
   return this.ptotal;
 }
-player.prototype.ptotal = function(){
-  if(ptotal => 100){alert("Congratulations! You won the game.")
+
+
+// check for winner
+player.prototype.winnerCheck = function () {
+  if (this.ptotal >= 100) {
+    alert("Congratulations! You won the game.");
   }
 }
 
@@ -39,6 +44,8 @@ function print1(){
   player1.holdDice();
   console.log(player1.ptotal);
 }
+
+  
 
 // User Logic
 $(document).ready(function () {
@@ -61,7 +68,8 @@ $(document).ready(function () {
     $("#dieHold").hide();
     $("#p2buttonroll").show();
     $("#dieHold2").show();
-    $("#score
+    player1.winnerCheck();
+  });  
 
   $("#p2buttonroll").click(function () {
     $("#scoreDisplay2").text(player2.rollDice());
@@ -81,7 +89,7 @@ $(document).ready(function () {
     $("#dieHold2").hide();
     $("#p1buttonroll").show();
     $("#dieHold").show();
-    
+    player2.winnerCheck();
   });
  
 }); 
