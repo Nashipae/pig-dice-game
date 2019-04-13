@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron" id="myjumbo"><h1>Pig Dice Game</h1></div>
+    <div class="jumbotron" id="myjumbo"></div>
     <h1 id="our-headline">Karibu to the Pig Dice Game!</h1>
     <p>This is a fun game that was first described in print by John Scarne in 1945. Pig often serves as a simple example for teaching probability concepts from the middle school level upwards. The game also provides exercises for teaching Computer Science in areas ranging from introductory courses to advanced machine learning material.</p>
     <div class="row">
@@ -66,8 +66,8 @@
 
     <div class="col-md-4" id="scoresTally">
       <h3>Games Scores</h3>
-      <button type="button" class="btn btn-success" id="P1Score" onclick="print1()">player1 Score</button>
-      <button type="button" class="btn btn-success" id="P2Score" onclick="getSum()">player2 Score</button>
+      Player 1 total score: <button type="button" class="btn btn-success" id="P1TotalScore" onclick="print1()">player1 Score</button>
+      Player 2 total score:<button type="button" class="btn btn-success" id="P2TotalScore" onclick="getSum()">player2 Score</button>
     </div>
     </div>
     <script src="js/scripts2.js"></script>

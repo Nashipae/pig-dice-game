@@ -39,7 +39,8 @@ $(document).ready(function () {
   // $("#p1buttonroll").click(){}
   $("#p1buttonroll").click(function () {
     $("#scoreDisplay").text(player1.rollDice());
-    $("#totalDisplay").text("Your total score is "+ player1.ptotal);
+    $("#P1TotalScore").text(player1.ptotal);
+    $("#totalDisplay").text("Your total score is "+ player1.ptotal);    
     if (player1.roll === 1){
       $("#p1buttonroll").hide();
       $("#dieHold").hide();
@@ -49,6 +50,7 @@ $(document).ready(function () {
   });  
   $("#dieHold").click(function () {
     $("#totalDisplay").text(player1.holdDice());
+    $("#P1TotalScore").text(player1.ptotal);
     $("#p1buttonroll").hide();
     $("#dieHold").hide();
     $("#p2buttonroll").show();
@@ -57,6 +59,7 @@ $(document).ready(function () {
 
   $("#p2buttonroll").click(function () {
     $("#scoreDisplay2").text(player2.rollDice());
+    $("#P2TotalScore").text(player2.ptotal);
     $("#totalDisplay2").text("Your total score is "+ player2.ptotal);
     if (player2.roll === 1) {
       $("#p2buttonroll").hide();
@@ -67,6 +70,7 @@ $(document).ready(function () {
   });
   $("#dieHold2").click(function () {
     $("#totalDisplay2").text(player2.holdDice());
+    $("#P2TotalScore").text(player2.ptotal);
     $("#p2buttonroll").hide();
     $("#dieHold2").hide();
     $("#p1buttonroll").show();
