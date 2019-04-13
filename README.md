@@ -16,9 +16,8 @@ Pig-Dice is a fun game played by two players. Each player repeatedly rolls a die
 | ------------- |:-------------:| -----:|
 | | Player 1 clicks Player 1 Roll button | Click Roll button | Die rolls and number is generated
 | If Player 1 rolls any number other than 1, that roll is added to round total | Roll = 4 | Round score = 4 |
-| If Player 1 rolls a 1, no score is added and round for Player 1 ends | Roll = 1 | Round score = 2 / Total score = 2 / Player 2 begins |
-| Repeat for Player 2 | Roll = 1 | Round total = 0 / Total score = 0 / Player 1 begins |
-| When a player's total score reaches 100 or more, game ends and winner page shows | Player 1 total score = 100 | Winner alert |
+| If Player 1 rolls a 1, no score is added and round for Player 1 ends | Roll = 1 | Round score = 0 / Total score is maintained / Player 2 begins |
+| | When a player's total score reaches 100 or more, game ends and winner alert shows | Player 1 total score = 100 | Winner alert |
 
 ## Setup/Installation Requirements
 
