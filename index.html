@@ -7,13 +7,14 @@
   <!-- <script src="js/scripts.js"></script> -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
   <script src="js/jquery-3.3.1.js"></script>
   <title>Pig-Dice Game</title>
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron" id="myjumbo"><h1>Pig Dice Game</h1></div>
-    <h1 id="our-headline">Karibu to the Pig Dice Game!</h1>
+    <div class="jumbotron" id="myjumbo"></div>
+    <h1 id="headline">Karibu to the Pig Dice Game!</h1>
     <p>This is a fun game that was first described in print by John Scarne in 1945. Pig often serves as a simple example for teaching probability concepts from the middle school level upwards. The game also provides exercises for teaching Computer Science in areas ranging from introductory courses to advanced machine learning material.</p>
     <div class="row">
       <div class="col-md-6" id="rules">
@@ -31,12 +32,11 @@
     </div>
     </div>
   
-    <h3>Time to play</h3>
-    <div class="row">
+    <h3 id="timeToPlay">Time to play</h3>
+    <div class="row" id="playBoard">
       <div class="col-md-4" id="player1">
         <h3>Player 1 section</h3>
-        <button id="buttons">
-        
+              
       <button type="button" id="p1buttonroll" class="btn btn-success"> Player 1 roll</button>
       <button type="button" class="btn btn-danger" id="dieHold">Player 1 Hold</button>
     <div>Player 1 score for the round.</div>
@@ -44,7 +44,7 @@
     
     </div>
     <div id="totalDisplay">
-    
+    Your total so far: 
     </div>
     </div>
     
@@ -65,12 +65,18 @@
     </div>
 
     <div class="col-md-4" id="scoresTally">
-      <h3>Games Scores</h3>
-      <button type="button" class="btn btn-success" id="P1Score" onclick="print1()">player1 Score</button>
-      <button type="button" class="btn btn-success" id="P2Score" onclick="getSum()">player2 Score</button>
+      <h3>Game Score Board</h3>
+        <div>Player 1 total score: <button type="button" class="btn btn-success" id="P1TotalScore" onclick="print1()">player1 Score</button>
+        </div>
+        <br>
+      <div>Player 2 total score:<button type="button" class="btn btn-success" id="P2TotalScore" onclick="getSum()">player2 Score</button>
+        </div>
     </div>
     </div>
     <script src="js/scripts2.js"></script>
+    <div class="footer">
+
+    </div>
   </div>
 </body>
 </html>
