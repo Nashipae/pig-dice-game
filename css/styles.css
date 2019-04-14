@@ -14,7 +14,7 @@
   height: 300px;
 }
 #myJumbo{
-  background-image: url("../images/dice3.jpg");
+  background-image: url("../Images/dice3.jpg");
 }
 #player2{
   background-color:  #d9b3ff;
@@ -36,7 +36,7 @@
 }
 #playBoard{
   height: 300px;
-  background-image: url("../images/bckgrd1.jpg");
+  background-image: url("../Images/bckgrd1.jpg");
   align: center;
 }
 #headline{
