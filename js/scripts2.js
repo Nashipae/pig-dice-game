@@ -75,7 +75,10 @@ $(document).ready(function () {
       $("#p2buttonroll").show();
       $("#dieHold2").show();
     }
+    
   });
+
+$("newDice").text()
   $("#dieHold").click(function () {
     $("#totalDisplay").text(player1.holdDice());
     $("#P1TotalScore").text(player1.ptotal);
