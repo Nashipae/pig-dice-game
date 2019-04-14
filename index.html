@@ -13,73 +13,70 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron" id="myjumbo"></div>
+    <div class="jumbotron" id="myJumbo"></div>
     <h1 id="headline">Karibu to the Pig Dice Game!</h1>
     <p>This is a fun game that was first described in print by John Scarne in 1945. Pig often serves as a simple example for teaching probability concepts from the middle school level upwards. The game also provides exercises for teaching Computer Science in areas ranging from introductory courses to advanced machine learning material.</p>
     <div class="row">
       <div class="col-md-6" id="rules">
-    <h2>How to Play</h2>
-    <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
-
-      <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-      <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-      <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li><br>
+        <h2>How to Play</h2>
+        <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+        <ul>
+          <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+          <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+          <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+        </ul>
       </div>
       <div class="col-md-6" id="scoring">
-      <h2>Scoring</h2>
-    <p><strong>The first player to score 100 or more points wins.</strong></p>
-    <p>For example, the first player, Anne, begins a turn with a roll of 5. Anne could hold and score 5 points, but chooses to roll again. Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again. Anne rolls a 1, and must end her turn without scoring. The next player, Bob, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.</p>
+        <h2>Scoring</h2>
+        <p><strong>The first player to score 100 or more points wins.</strong></p>
+        <p>For example, the first player, Anne, begins a turn with a roll of 5. Anne could hold and score 5 points, but chooses to roll again. Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again. Anne rolls a 1, and must end her turn without scoring. The next player, Bob, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.</p>
+      </div>
     </div>
-    </div>
-  
     <h3 id="timeToPlay">Time to play</h3>
     <div class="row" id="playBoard">
       <div class="col-md-4" id="player1">
         <h3>Player 1 section</h3>
-              
-      <button type="button" id="p1buttonroll" class="btn btn-success"> Player 1 roll</button>
-      <button type="button" class="btn btn-danger" id="dieHold">Player 1 Hold</button>
-    <div>Player 1 score for the round.</div>
-    <div id="scoreDisplay">
-    
-    </div>
-    <div id="totalDisplay">
-    Your total so far: 
-    </div>
-    </div>
-    
-    <div class="col-md-4" id="player2">
-      <h3>Player 2 section</h3>
-      <button type="button" id="p2buttonroll" class="btn btn-success"> Player 2 roll</button><button type="button"
-      class="btn btn-danger" id="dieHold2">Player 2 Hold</button>
-    </button>
-    <div>
-      <div>Player 2 score for the round.</div>
-      <div id="scoreDisplay2">
-      
-      </div>
-      <div id="totalDisplay2">
-      
-      </div>
-    </div>
-    </div>
+        <button type="button" id="p1buttonroll" class="btn btn-success"> Player 1 roll</button>
+        <button type="button" class="btn btn-danger" id="dieHold">Player 1 Hold</button>
+        <div>Player 1 score for the round.</div>
+        <div id="scoreDisplay">
 
+        </div>
+        <div id="totalDisplay">
+          Your total so far: 
+        </div>
+      </div>
+      <div class="col-md-4" id="player2">
+        <h3>Player 2 section</h3>
+        <button type="button" id="p2buttonroll" class="btn btn-success"> Player 2 roll</button>
+        <button type="button" class="btn btn-danger" id="dieHold2">Player 2 Hold</button>
+      </button>
+      <div>
+        <div>Player 2 score for the round.</div>
+        <div id="scoreDisplay2">
+
+        </div>
+        <div id="totalDisplay2">
+
+        </div>
+      </div>
+    </div>
     <div class="col-md-4" id="scoresTally">
       <h3>Game Score Board</h3>
-        <div>Player 1 total score: <button type="button" class="btn btn-success" id="P1TotalScore" onclick="print1()">player1 Score</button>
-        </div>
-        <br>
+      <div>Player 1 total score: <button type="button" class="btn btn-success" id="P1TotalScore" onclick="print1()">player1 Score</button>
+      </div>
+      <br>
       <div>Player 2 total score:<button type="button" class="btn btn-success" id="P2TotalScore" onclick="getSum()">player2 Score</button>
-        </div>
+      </div>
       <div class="newDice">
 
       </div>
     </div>
-    </div>
-    <script src="js/scripts2.js"></script>
-    <div class="footer">
-
-    </div>
   </div>
+  <script src="js/scripts2.js"></script>
+  <div class="footer">
+
+  </div>
+</div>
 </body>
 </html>
